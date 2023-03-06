@@ -1,3 +1,9 @@
+/* 
+Nama    : Al Fiana Nur Priyanti
+NIM     : 2109106022
+Kelas   : Informatika A 2021
+*/
+
 package Posttest_1;
 
 
