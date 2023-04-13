@@ -1,10 +1,9 @@
 package Posttest_6;
 
-public abstract class Imunisasi {
+public class Imunisasi {
     protected String jenis_imunisasi;
     protected int dosis;
     
-
     public Imunisasi(String jenis_imunisasi, int dosis) {
         this.jenis_imunisasi = jenis_imunisasi;
         this.dosis = dosis;
@@ -25,10 +24,12 @@ public abstract class Imunisasi {
     public void setDosis(int dosis) {
         this.dosis = dosis;
     }
-    
-    public abstract void addData();
-    public abstract void edit();
-    public abstract void del();
+       
+    public void viewData(){
+        System.out.println(" Jenis Imunisasi    : " + this.jenis_imunisasi);
+        System.out.println(" Dosis              : " + this.dosis);
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    }
 }
 final class Pemberitahuan{
     public final String posyandu = "Posyandu Kita";
@@ -47,9 +48,9 @@ final class Pemberitahuan{
         System.out.println("                ~~~~                 ");
     }
     
-    public final void pemberitahuan(String Jns_Imunisasi){
+    public final void pemberitahuan(String kode){
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(" Dengan Jenis Imunisasi " + Jns_Imunisasi);
+        System.out.println(" Dengan Jenis Imunisasi " + kode);
     }
     public final void pemberitahuan(int action){
         switch (action){
@@ -72,4 +73,4 @@ final class Pemberitahuan{
                 break;
         }
     }
-}  
+}    
