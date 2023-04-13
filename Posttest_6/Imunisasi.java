@@ -1,4 +1,4 @@
-package Posttest_6;
+package Posttest_6; 
 
 public class Imunisasi {
     protected String jenis_imunisasi;
